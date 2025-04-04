@@ -14,9 +14,9 @@
     },
     "require": {
         "php": ">=7.3",
-        "zendframework/zend-stdlib": "~2.5",
-        "zendframework/zend-json": "~2.5",
-        "zendframework/zend-math": "~2.5"
+        "acbjtechnology/zend-stdlib-25": "@dev",
+        "acbjtechnology/zend-json-25": "@dev",
+        "acbjtechnology/zend-math-25": "@dev"
     },
     "require-dev": {
         "zendframework/zend-servicemanager": "~2.5"
@@ -36,5 +36,59 @@
         "psr-4": {
             "ZendTest\\Serializer\\": "test/"
         }
-    }
+    },
+    "repositories" : [
+        {
+            "type":"package",
+            "package": {
+                "name": "acbjtechnology/zend-stdlib-25",
+                "version":"dev-main",
+                "source": {
+                    "url": "https://github.com/acbjtechnology/zend-stdlib-25.git",
+                    "type": "git",
+                    "reference":"main"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Zend\\Stdlib\\": "src/"
+                    }
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "acbjtechnology/zend-json-25",
+                "version":"dev-main",
+                "source": {
+                    "url": "https://github.com/acbjtechnology/zend-json-25.git",
+                    "type": "git",
+                    "reference":"main"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Zend\\Stdlib\\": "src/"
+                    }
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "acbjtechnology/zend-math-25",
+                "version":"dev-main",
+                "source": {
+                    "url": "https://github.com/acbjtechnology/zend-math-25.git",
+                    "type": "git",
+                    "reference":"main"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Zend\\Stdlib\\": "src/"
+                    }
+                }
+            }
+        }
+    ]
+
 }
