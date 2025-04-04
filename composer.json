@@ -67,7 +67,7 @@
                 },
                 "autoload": {
                     "psr-4": {
-                        "Zend\\Stdlib\\": "src/"
+                        "Zend\\Json\\": "src/"
                     }
                 }
             }
@@ -84,7 +84,7 @@
                 },
                 "autoload": {
                     "psr-4": {
-                        "Zend\\Stdlib\\": "src/"
+                        "Zend\\Math\\": "src/"
                     }
                 }
             }
